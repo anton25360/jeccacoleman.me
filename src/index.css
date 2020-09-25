@@ -21,6 +21,7 @@ html, body {
 .App{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 #title{
@@ -31,5 +32,5 @@ html, body {
 	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
 }
+
