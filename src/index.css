@@ -34,3 +34,14 @@ html, body {
 	-webkit-text-fill-color: transparent;
 }
 
+#video{
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+#subtitle{
+  margin-top: 40px;
+  font-size: 20px;
+}
