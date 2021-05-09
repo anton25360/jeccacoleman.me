@@ -28,7 +28,7 @@ function App() {
             <button className="intro-contact-button">Get in touch</button>
           </p>
         </div>
-        <div />
+        <div className='scroll-indicator'>SCROLL FOR MORE</div>
       </div>
     </div>
   );
