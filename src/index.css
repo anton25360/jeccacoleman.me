@@ -21,10 +21,13 @@ body {
 .welcome-container {
   background-color: brown;
   height: 100vh;
-  /* background: linear-gradient(-45deg, #ecc864, #e95f94, #3b98e4, #3fe4bd); */
   background: linear-gradient(-45deg, #b1fccf, #f5ce73, #f7797d, pink);
   background-size: 400% 400%;
   animation: gradient 11s ease infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @keyframes gradient {
@@ -72,4 +75,22 @@ body {
 .navbar-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.intro-container {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.767);
+  margin-bottom: 30px;
+  text-align: start;
+  max-width: 550px;
+}
+.intro-contact-button{
+  background-color: rgba(32, 32, 32, 0.897);
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
