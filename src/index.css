@@ -1,47 +1,55 @@
 @font-face {
-  font-family: 'Product';
+  font-family: "Product";
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+      format("woff2");
 }
 
-*{
-  font-family: 'Product';
+* {
+  font-family: "Product";
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+.welcome-container {
+  background-color: brown;
+  height: 100vh;
+  /* background: linear-gradient(-45deg, #ecc864, #e95f94, #3b98e4, #3fe4bd); */
+  background: linear-gradient(-45deg, #b1fccf, #f5ce73, #f7797d, pink);
+  background-size: 400% 400%;
+  animation: gradient 11s ease infinite;
 }
 
-.App{
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar {
+  /* background-color: rgba(255, 255, 255, 0.664); */
+  /* height: 65px; */
+  padding-top: 30px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
-
-#title{
-  font-size: 70px;
-  display: inline;
-  margin: 20px;
-
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-#video{
-
-  margin: 0 auto;
-  margin-top: 20px;
-
-}
-
-#subtitle{
-  margin-top: 40px;
-  font-size: 20px;
+.navbar-link {
+  /* background-color: red; */
+  margin: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
 }
